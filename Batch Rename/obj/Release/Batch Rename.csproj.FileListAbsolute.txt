@@ -1,0 +1,60 @@
+D:\Project\Batch Rename\Batch Rename\bin\Release\Icon\add-16.png
+D:\Project\Batch Rename\Batch Rename\bin\Release\Icon\add-folder-16.png
+D:\Project\Batch Rename\Batch Rename\bin\Release\Icon\delete-16.png
+D:\Project\Batch Rename\Batch Rename\bin\Release\Icon\down.png
+D:\Project\Batch Rename\Batch Rename\bin\Release\Icon\file-16.png
+D:\Project\Batch Rename\Batch Rename\bin\Release\Icon\first.png
+D:\Project\Batch Rename\Batch Rename\bin\Release\Icon\folder-16.png
+D:\Project\Batch Rename\Batch Rename\bin\Release\Icon\full-folder-16.png
+D:\Project\Batch Rename\Batch Rename\bin\Release\Icon\help-16.png
+D:\Project\Batch Rename\Batch Rename\bin\Release\Icon\last.png
+D:\Project\Batch Rename\Batch Rename\bin\Release\Icon\play-16.png
+D:\Project\Batch Rename\Batch Rename\bin\Release\Icon\refresh-16.png
+D:\Project\Batch Rename\Batch Rename\bin\Release\Icon\rename-icon-small.jpg
+D:\Project\Batch Rename\Batch Rename\bin\Release\Icon\report-3-16.png
+D:\Project\Batch Rename\Batch Rename\bin\Release\Icon\save-16.png
+D:\Project\Batch Rename\Batch Rename\bin\Release\Icon\top.png
+D:\Project\Batch Rename\Batch Rename\bin\Release\Icon\x-mark-16.png
+D:\Project\Batch Rename\Batch Rename\bin\Release\Batch Rename.exe.config
+D:\Project\Batch Rename\Batch Rename\bin\Release\Batch Rename.exe
+D:\Project\Batch Rename\Batch Rename\bin\Release\Batch Rename.pdb
+D:\Project\Batch Rename\Batch Rename\obj\Release\Batch Rename.csprojAssemblyReference.cache
+D:\Project\Batch Rename\Batch Rename\obj\Release\MainWindow.g.cs
+D:\Project\Batch Rename\Batch Rename\obj\Release\App.g.cs
+D:\Project\Batch Rename\Batch Rename\obj\Release\GeneratedInternalTypeHelper.g.cs
+D:\Project\Batch Rename\Batch Rename\obj\Release\Batch Rename_MarkupCompile.cache
+D:\Project\Batch Rename\Batch Rename\obj\Release\Batch Rename_MarkupCompile.lref
+D:\Project\Batch Rename\Batch Rename\obj\Release\MainWindow.baml
+D:\Project\Batch Rename\Batch Rename\obj\Release\Batch Rename.g.resources
+D:\Project\Batch Rename\Batch Rename\obj\Release\Batch_Rename.Properties.Resources.resources
+D:\Project\Batch Rename\Batch Rename\obj\Release\Batch Rename.csproj.GenerateResource.cache
+D:\Project\Batch Rename\Batch Rename\obj\Release\Batch Rename.exe
+D:\Project\Batch Rename\Batch Rename\obj\Release\Batch Rename.pdb
+D:\Project\1712610_1712668_BatchRename\Batch Rename\Batch Rename\bin\Release\Batch Rename.exe.config
+D:\Project\1712610_1712668_BatchRename\Batch Rename\Batch Rename\bin\Release\Batch Rename.exe
+D:\Project\1712610_1712668_BatchRename\Batch Rename\Batch Rename\bin\Release\Batch Rename.pdb
+D:\Project\1712610_1712668_BatchRename\Batch Rename\Batch Rename\obj\Release\Batch Rename.csprojAssemblyReference.cache
+D:\Project\1712610_1712668_BatchRename\Batch Rename\Batch Rename\obj\Release\ExtensionFrame.g.cs
+D:\Project\1712610_1712668_BatchRename\Batch Rename\Batch Rename\obj\Release\MainWindow.g.cs
+D:\Project\1712610_1712668_BatchRename\Batch Rename\Batch Rename\obj\Release\MoveFrame.g.cs
+D:\Project\1712610_1712668_BatchRename\Batch Rename\Batch Rename\obj\Release\NewCaseFrame.g.cs
+D:\Project\1712610_1712668_BatchRename\Batch Rename\Batch Rename\obj\Release\NewNameFrame.g.cs
+D:\Project\1712610_1712668_BatchRename\Batch Rename\Batch Rename\obj\Release\RemoveFrame.g.cs
+D:\Project\1712610_1712668_BatchRename\Batch Rename\Batch Rename\obj\Release\ReplaceFrame.g.cs
+D:\Project\1712610_1712668_BatchRename\Batch Rename\Batch Rename\obj\Release\TrimFrame.g.cs
+D:\Project\1712610_1712668_BatchRename\Batch Rename\Batch Rename\obj\Release\App.g.cs
+D:\Project\1712610_1712668_BatchRename\Batch Rename\Batch Rename\obj\Release\Batch Rename_MarkupCompile.cache
+D:\Project\1712610_1712668_BatchRename\Batch Rename\Batch Rename\obj\Release\Batch Rename_MarkupCompile.lref
+D:\Project\1712610_1712668_BatchRename\Batch Rename\Batch Rename\obj\Release\ExtensionFrame.baml
+D:\Project\1712610_1712668_BatchRename\Batch Rename\Batch Rename\obj\Release\MainWindow.baml
+D:\Project\1712610_1712668_BatchRename\Batch Rename\Batch Rename\obj\Release\MoveFrame.baml
+D:\Project\1712610_1712668_BatchRename\Batch Rename\Batch Rename\obj\Release\NewCaseFrame.baml
+D:\Project\1712610_1712668_BatchRename\Batch Rename\Batch Rename\obj\Release\NewNameFrame.baml
+D:\Project\1712610_1712668_BatchRename\Batch Rename\Batch Rename\obj\Release\RemoveFrame.baml
+D:\Project\1712610_1712668_BatchRename\Batch Rename\Batch Rename\obj\Release\ReplaceFrame.baml
+D:\Project\1712610_1712668_BatchRename\Batch Rename\Batch Rename\obj\Release\TrimFrame.baml
+D:\Project\1712610_1712668_BatchRename\Batch Rename\Batch Rename\obj\Release\Batch Rename.g.resources
+D:\Project\1712610_1712668_BatchRename\Batch Rename\Batch Rename\obj\Release\Batch_Rename.Properties.Resources.resources
+D:\Project\1712610_1712668_BatchRename\Batch Rename\Batch Rename\obj\Release\Batch Rename.csproj.GenerateResource.cache
+D:\Project\1712610_1712668_BatchRename\Batch Rename\Batch Rename\obj\Release\Batch Rename.exe
+D:\Project\1712610_1712668_BatchRename\Batch Rename\Batch Rename\obj\Release\Batch Rename.pdb

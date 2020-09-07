@@ -1,0 +1,31 @@
+﻿<Page x:Class="Batch_Rename.MoveFrame"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:Batch_Rename"
+      mc:Ignorable="d" 
+      d:DesignHeight="200" d:DesignWidth="400"
+      Title="MoveFrame" Background="White">
+
+    <StackPanel  Orientation="Vertical" Margin="20" VerticalAlignment="Center" HorizontalAlignment="Center" >
+        <StackPanel Orientation="Horizontal" Margin="2">
+
+            <Label Content="Move From" Width="80" FontWeight="DemiBold"/>
+            <TextBox x:Name="TextBoxMoveFrom" Width="200" BorderBrush="LightBlue" BorderThickness="2"
+                     TextChanged="TextBoxMoveFrom_TextChanged"></TextBox>
+        </StackPanel>
+        <StackPanel Orientation="Horizontal" Margin="2">
+            <Label Content="Count" Width="80" FontWeight="DemiBold"/>
+            <TextBox x:Name="TextBoxCount" Width="200" BorderBrush="LightBlue" BorderThickness="2"
+                     TextChanged="TextBoxCount_TextChanged"></TextBox>
+        </StackPanel>
+        <StackPanel Orientation="Horizontal" Margin="2">
+            <Label Content="Move To" Width="80" FontWeight="DemiBold"/>
+            <TextBox x:Name="TextBoxMoveTo" Width="200" BorderBrush="LightBlue" 
+                    TextChanged="TextBoxMoveTo_TextChanged" BorderThickness="2"></TextBox>
+        </StackPanel>
+
+    </StackPanel>
+
+</Page>

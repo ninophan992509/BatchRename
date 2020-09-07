@@ -1,0 +1,56 @@
+D:\Project\Batch Rename\Batch Rename\bin\Debug\Batch Rename.exe.config
+D:\Project\Batch Rename\Batch Rename\bin\Debug\Batch Rename.exe
+D:\Project\Batch Rename\Batch Rename\bin\Debug\Batch Rename.pdb
+D:\Project\Batch Rename\Batch Rename\obj\Debug\Batch Rename.csprojAssemblyReference.cache
+D:\Project\Batch Rename\Batch Rename\obj\Debug\MainWindow.g.cs
+D:\Project\Batch Rename\Batch Rename\obj\Debug\MoveFrame.g.cs
+D:\Project\Batch Rename\Batch Rename\obj\Debug\NewCaseFrame.g.cs
+D:\Project\Batch Rename\Batch Rename\obj\Debug\NewNameFrame.g.cs
+D:\Project\Batch Rename\Batch Rename\obj\Debug\RemoveFrame.g.cs
+D:\Project\Batch Rename\Batch Rename\obj\Debug\ReplaceFrame.g.cs
+D:\Project\Batch Rename\Batch Rename\obj\Debug\TrimFrame.g.cs
+D:\Project\Batch Rename\Batch Rename\obj\Debug\App.g.cs
+D:\Project\Batch Rename\Batch Rename\obj\Debug\Batch Rename_MarkupCompile.cache
+D:\Project\Batch Rename\Batch Rename\obj\Debug\Batch Rename_MarkupCompile.lref
+D:\Project\Batch Rename\Batch Rename\obj\Debug\MainWindow.baml
+D:\Project\Batch Rename\Batch Rename\obj\Debug\MoveFrame.baml
+D:\Project\Batch Rename\Batch Rename\obj\Debug\NewCaseFrame.baml
+D:\Project\Batch Rename\Batch Rename\obj\Debug\NewNameFrame.baml
+D:\Project\Batch Rename\Batch Rename\obj\Debug\RemoveFrame.baml
+D:\Project\Batch Rename\Batch Rename\obj\Debug\ReplaceFrame.baml
+D:\Project\Batch Rename\Batch Rename\obj\Debug\TrimFrame.baml
+D:\Project\Batch Rename\Batch Rename\obj\Debug\Batch Rename.g.resources
+D:\Project\Batch Rename\Batch Rename\obj\Debug\Batch_Rename.Properties.Resources.resources
+D:\Project\Batch Rename\Batch Rename\obj\Debug\Batch Rename.csproj.GenerateResource.cache
+D:\Project\Batch Rename\Batch Rename\obj\Debug\Batch Rename.exe
+D:\Project\Batch Rename\Batch Rename\obj\Debug\Batch Rename.pdb
+D:\Project\Batch Rename\Batch Rename\obj\Debug\ExtensionFrame.g.cs
+D:\Project\Batch Rename\Batch Rename\obj\Debug\ExtensionFrame.baml
+D:\Project\1712610_1712668_BatchRename\Batch Rename\Batch Rename\bin\Debug\Batch Rename.exe.config
+D:\Project\1712610_1712668_BatchRename\Batch Rename\Batch Rename\bin\Debug\Batch Rename.exe
+D:\Project\1712610_1712668_BatchRename\Batch Rename\Batch Rename\bin\Debug\Batch Rename.pdb
+D:\Project\1712610_1712668_BatchRename\Batch Rename\Batch Rename\obj\Debug\Batch Rename.csprojAssemblyReference.cache
+D:\Project\1712610_1712668_BatchRename\Batch Rename\Batch Rename\obj\Debug\ExtensionFrame.g.cs
+D:\Project\1712610_1712668_BatchRename\Batch Rename\Batch Rename\obj\Debug\MainWindow.g.cs
+D:\Project\1712610_1712668_BatchRename\Batch Rename\Batch Rename\obj\Debug\MoveFrame.g.cs
+D:\Project\1712610_1712668_BatchRename\Batch Rename\Batch Rename\obj\Debug\NewCaseFrame.g.cs
+D:\Project\1712610_1712668_BatchRename\Batch Rename\Batch Rename\obj\Debug\NewNameFrame.g.cs
+D:\Project\1712610_1712668_BatchRename\Batch Rename\Batch Rename\obj\Debug\RemoveFrame.g.cs
+D:\Project\1712610_1712668_BatchRename\Batch Rename\Batch Rename\obj\Debug\ReplaceFrame.g.cs
+D:\Project\1712610_1712668_BatchRename\Batch Rename\Batch Rename\obj\Debug\TrimFrame.g.cs
+D:\Project\1712610_1712668_BatchRename\Batch Rename\Batch Rename\obj\Debug\App.g.cs
+D:\Project\1712610_1712668_BatchRename\Batch Rename\Batch Rename\obj\Debug\Batch Rename_MarkupCompile.cache
+D:\Project\1712610_1712668_BatchRename\Batch Rename\Batch Rename\obj\Debug\Batch Rename_MarkupCompile.lref
+D:\Project\1712610_1712668_BatchRename\Batch Rename\Batch Rename\obj\Debug\ExtensionFrame.baml
+D:\Project\1712610_1712668_BatchRename\Batch Rename\Batch Rename\obj\Debug\MainWindow.baml
+D:\Project\1712610_1712668_BatchRename\Batch Rename\Batch Rename\obj\Debug\MoveFrame.baml
+D:\Project\1712610_1712668_BatchRename\Batch Rename\Batch Rename\obj\Debug\NewCaseFrame.baml
+D:\Project\1712610_1712668_BatchRename\Batch Rename\Batch Rename\obj\Debug\NewNameFrame.baml
+D:\Project\1712610_1712668_BatchRename\Batch Rename\Batch Rename\obj\Debug\RemoveFrame.baml
+D:\Project\1712610_1712668_BatchRename\Batch Rename\Batch Rename\obj\Debug\ReplaceFrame.baml
+D:\Project\1712610_1712668_BatchRename\Batch Rename\Batch Rename\obj\Debug\TrimFrame.baml
+D:\Project\1712610_1712668_BatchRename\Batch Rename\Batch Rename\obj\Debug\Batch Rename.g.resources
+D:\Project\1712610_1712668_BatchRename\Batch Rename\Batch Rename\obj\Debug\Batch_Rename.Properties.Resources.resources
+D:\Project\1712610_1712668_BatchRename\Batch Rename\Batch Rename\obj\Debug\Batch Rename.csproj.GenerateResource.cache
+D:\Project\1712610_1712668_BatchRename\Batch Rename\Batch Rename\obj\Debug\Batch Rename.exe
+D:\Project\1712610_1712668_BatchRename\Batch Rename\Batch Rename\obj\Debug\Batch Rename.pdb

@@ -1,0 +1,342 @@
+﻿<Window x:Class="Batch_Rename.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:local="clr-namespace:Batch_Rename"
+        Title="My Rename" Height="600" Width="1050" 
+        WindowStartupLocation="CenterScreen" WindowState="Normal"  
+        ShowInTaskbar="True" x:Name="mainWindow"  ResizeMode="CanResize" >
+
+    <DockPanel>
+        <!--Thanh công cụ -->
+        <ToolBarTray DockPanel.Dock="Top">
+            <ToolBar>
+                <!--Button refresh-->
+                <Button  Name="bnt_Refresh" Click="bnt_Refresh_Click">
+                    <StackPanel Orientation="Horizontal">
+                        <Image  Name="IconRefresh" Source="/Icon/refresh-16.png"></Image>
+                        <TextBlock Text="Refresh" Margin="6,0,0,0"></TextBlock>
+                    </StackPanel>
+                </Button>
+                <Separator />
+                <Menu>
+                    <MenuItem Header="_Help" Name="MenuHelp">
+                        <MenuItem.Icon>
+                            <Image Name="IconHelp" Source="Icon/help-16.png"></Image>
+                        </MenuItem.Icon>
+                        <Separator />
+                        <MenuItem Header="_About" />
+                    </MenuItem>
+                </Menu>
+                <Separator />
+                <!--Button Start Batch-->
+                <Button Name="StartBatch" Click="StartBatch_Click">
+                    <StackPanel Orientation="Horizontal">
+                        <Image Name="IconBatch" Source="/Icon/play-16.png"></Image>
+                        <TextBlock Text="Start Batch" Margin="5,0,0,0"></TextBlock>
+                    </StackPanel>
+                </Button>
+            </ToolBar>
+        </ToolBarTray>
+
+        <!--Cửa sổ làm việc với method-->
+        <StackPanel Orientation="Vertical" DockPanel.Dock="Left">
+            <ToolBarTray>
+                <ToolBar>
+                    <!--Button thêm phương thức-->
+                    <Menu>
+                        <MenuItem Header="_Add Method" Name="MenuAddMethod">
+                            <MenuItem.Icon>
+                                <Image Name="IconAddMethod" Source="/Icon/add-16.png"></Image>
+                            </MenuItem.Icon>
+                            <MenuItem Header="_New Name" Name="NewName" Click="NewName_Click"/>
+                            <MenuItem Header="_New Case" Name="NewCase" Click="NewCase_Click"/>
+                            <MenuItem Header="_Move" Name="Move" Click="Move_Click"/>
+                            <MenuItem Header="_Remove" Name="Remove" Click="Remove_Click" />
+                            <MenuItem Header="_Replace" Name="Replace" Click="Replace_Click"/>
+                            <MenuItem Header="_Trim" Name="Trim" Click="Trim_Click"/>
+                            <MenuItem Header="_Extension" Name="Extension" Click="Extension_Click"/>
+
+                        </MenuItem>
+                    </Menu>
+                    <Separator />
+
+                    <!--Clear Button-->
+                    <Button Name="IconLeftClear" Click="IconLeftClear_Click">
+                        <Image  Source="/Icon/x-mark-16.png"></Image>
+                    </Button>
+                    <Button Name="bnt_Clear" Click="bnt_Clear_Click">
+                        <StackPanel Orientation="Horizontal">
+                            <Image Name="IconRightClear" Source="/Icon/delete-16.png"></Image>
+                            <TextBlock Text="Clear" Margin="5,0,0,0"></TextBlock>
+                        </StackPanel>
+                    </Button>
+                    <Separator/>
+
+                    <!--Nhóm button di chuyển phương thức-->
+                    <Button x:Name="bnt_First" Click="bnt_First_Click">
+                        <Image Name="IconFirst" Source="/Icon/first.png"></Image>
+                    </Button>
+                    <Button x:Name="bnt_Top" Click="bnt_Top_Click">
+                        <Image Name="IconTop" Source="/Icon/top.png"></Image>
+                    </Button>
+                    <Button x:Name="bnt_Down" Click="bnt_Down_Click">
+                        <Image Name="IconDown" Source="/Icon/down.png"></Image>
+                    </Button>
+                    <Button x:Name="bnt_Last" Click="bnt_Last_Click">
+                        <Image Name="IconLast" Source="/Icon/last.png"></Image>
+                    </Button>
+
+                </ToolBar>
+            </ToolBarTray>
+            <ToolBarTray>
+                <ToolBar>
+                    <!--Button thêm preset-->
+                    <Button Name="bnt_AddPreset" Click="bnt_AddPreset_Click">
+                        <Image Name="IconAddPreset" Source="/Icon/add-folder-16.png"></Image>
+                    </Button>
+
+                    <!--Button lưu preset-->
+                    <Button x:Name="bnt_SavePreset" Click="bnt_SavePreset_Click">
+                        <Image Name="IconSavePreset" Source="/Icon/save-16.png"></Image>
+                    </Button>
+                    <Separator></Separator>
+
+                    <!--Combobox chọn preset-->
+                    <Label Content="Preset: "></Label>
+                    <ComboBox Name="ComboboxPreset" Width="150" SelectionChanged="ComboboxPreset_SelectionChanged" >
+                        <ComboBoxItem  >
+                        </ComboBoxItem>
+                    </ComboBox>
+                </ToolBar>
+            </ToolBarTray>
+            <ListView x:Name="ListViewMethod" Height="473" Margin="2"  SelectionMode="Single">
+                <ListView.ItemContainerStyle  >
+                    <Style TargetType="{x:Type ListViewItem}"   >
+                        <Setter Property="Template" >
+                            <Setter.Value>
+                                <ControlTemplate >
+                                    <Expander x:Name="ExpanderMethod"  >
+                                        <Expander.Style>
+                                            <Style TargetType="{x:Type Expander}">
+                                                <Setter Property="Background" Value="LightPink"/>
+                                                <Style.Triggers>
+                                                    <Trigger Property="IsExpanded" Value="True">
+                                                        <Setter Property="Background" Value="LightBlue"/>
+                                                    </Trigger>
+                                                    <DataTrigger Binding="{Binding IsCheckMethod}" Value="False">
+                                                        <Setter Property="Background" Value="LightGray"/>
+                                                    </DataTrigger>
+                                                </Style.Triggers>
+                                            </Style>
+                                        </Expander.Style>
+
+                                        <Expander.Header >
+                                            <Border x:Name="BorderMethod" BorderThickness="2" BorderBrush="White" >
+                                                <Grid >
+                                                    <Grid.ColumnDefinitions>
+                                                        <ColumnDefinition Width="250"/>
+                                                        <ColumnDefinition Width="30"/>
+                                                        <ColumnDefinition Width="30"/>
+                                                    </Grid.ColumnDefinitions>
+
+                                                    <Grid Grid.Column="0">
+                                                        <TextBlock Text="{Binding NameMethod}" VerticalAlignment="Center" FontSize="24"/>
+                                                    </Grid>
+
+                                                    <Grid Grid.Column="1" >
+                                                        <CheckBox IsChecked="{Binding IsCheckMethod}"  >
+                                                            <CheckBox.LayoutTransform>
+                                                                <ScaleTransform ScaleX="2" ScaleY="2"/>
+                                                            </CheckBox.LayoutTransform>
+                                                        </CheckBox>
+                                                    </Grid>
+                                                    <Grid Grid.Column="2" >
+                                                        <Button x:Name="RemoveMethod" Click="RemoveMethod_Click" >
+                                                            <Image Source="Icon\x-mark-5-24.png" Stretch="Fill" />
+                                                        </Button>
+                                                    </Grid>
+                                                </Grid>
+                                            </Border>
+                                        </Expander.Header>
+                                        <Border Height="200">
+                                            <Border.Style>
+                                                <Style TargetType="{x:Type Border}">
+                                                    <Setter Property="BorderThickness" Value="5"/>
+                                                    <Setter Property="BorderBrush" Value="LightGray"/>
+                                                    <Style.Triggers>
+                                                        <DataTrigger Binding="{Binding IsCheckMethod}" Value="True">
+                                                            <Setter Property="BorderBrush" Value="LightBlue"/>
+                                                        </DataTrigger>
+                                                    </Style.Triggers>
+                                                </Style>
+                                            </Border.Style>
+                                            <Frame Content="{Binding PageMethod, Mode=TwoWay}" />
+                                        </Border>
+                                    </Expander>
+                                </ControlTemplate>
+                            </Setter.Value>
+                        </Setter>
+                    </Style>
+                </ListView.ItemContainerStyle>
+            </ListView>
+
+            <!--ListView chứa các method-->
+        </StackPanel>
+
+        <!--Cửa sổ làm việc bên phải-->
+        <StackPanel  Orientation="Vertical" DockPanel.Dock="Right">
+            <TabControl TabStripPlacement="Top">
+
+                <!--Tab làm việc với file-->
+                <TabItem Header="Rename Files" IsSelected="True" >
+                    <StackPanel Orientation="Vertical">
+                        <ToolBarTray>
+                            <ToolBar>
+                                <Menu>
+                                    <MenuItem Header="_Add" Name="MenuAddFile">
+                                        <MenuItem.Icon>
+                                            <Image x:Name="IconAddFile" 
+                                                   Source="/Icon/report-3-16.png"></Image>
+                                        </MenuItem.Icon>
+                                        <MenuItem Header="_Files.." Name="Files" Click="Files_Click" >
+                                            <MenuItem.Icon>
+                                                <Image Name="IconFile"  
+                                                   Source="/Icon/file-16.png"/>
+                                            </MenuItem.Icon>
+                                        </MenuItem>
+                                        <MenuItem Header="_Directoties.." Name="Directories" Click="Directories_Click">
+                                            <MenuItem.Icon>
+                                                <Image Name="IconDirectories"
+                                                   Source="/Icon/full-folder-16.png"/>
+                                            </MenuItem.Icon>
+                                        </MenuItem>
+                                    </MenuItem>
+                                </Menu>
+                                <Separator/>
+
+                                <!--Nhóm button di chuyển tập tin-->
+                                <Button x:Name="bnt_FirstFile" Click="bnt_MoveFirstFile_Click">
+                                    <Image Name="IconFirstFile" 
+                                       Source="/Icon/first.png"></Image>
+
+                                </Button>
+                                <Button  x:Name="bnt_UpFile" Click="bnt_MoveUpFile_Click">
+                                    <Image Name="IconTopFile"
+                                        Source="/Icon/top.png"></Image>
+                                </Button>
+                                <Button  x:Name="bnt_DownFile" Click="bnt_MoveDownFile_Click">
+                                    <Image Name="IconDownFile"
+                                        Source="/Icon/down.png"></Image>
+                                </Button>
+                                <Button  x:Name="bnt_LastFile" Click="bnt_MoveLastFile_Click">
+                                    <Image Name="IconLastFile"
+                                        Source="/Icon/last.png"></Image>
+                                </Button>
+
+                            </ToolBar>
+                        </ToolBarTray>
+                        <!--ListView chứa các file cần thao tác-->
+                        <ListView x:Name="ListFileSelected"   SelectionMode="Single"
+                                  Height="480" ScrollViewer.VerticalScrollBarVisibility="Visible"  Background="AntiqueWhite" FontWeight="Bold" >
+                            <ListView.View>
+
+                                <GridView>
+                                    <GridViewColumn>
+                                        <GridViewColumn.Header>
+                                            <CheckBox Checked="CheckBox_Checked" Unchecked="CheckBox_Unchecked"/>
+                                        </GridViewColumn.Header>
+                                        <GridViewColumn.CellTemplate>
+                                            <DataTemplate>
+                                                <CheckBox Margin="7" IsChecked="{Binding IsGroovy}"/>
+                                            </DataTemplate>
+                                        </GridViewColumn.CellTemplate>
+                                    </GridViewColumn >
+                                    <GridViewColumn Header="Filename" DisplayMemberBinding="{Binding Filename}"  Width="180"/>
+                                    <GridViewColumn Header="New Filename"  DisplayMemberBinding="{Binding Newname}" Width="180"/>
+                                    <GridViewColumn Header="Extension" DisplayMemberBinding="{Binding Extension}" Width="60"/>
+                                    <GridViewColumn Header="Path"  DisplayMemberBinding="{Binding Path}" Width="180"/>
+                                    <GridViewColumn Header="Error" DisplayMemberBinding="{Binding Error}" Width="180"/>
+                                </GridView>
+                            </ListView.View>
+                        </ListView>
+                    </StackPanel>
+
+                </TabItem>
+                <!--Tab làm việc với thư mục-->
+                <TabItem Header="Rename Folders" >
+                    <StackPanel Orientation="Vertical" Background="#FFF6F6F6">
+                        <ToolBarTray>
+                            <ToolBar>
+                                <Menu>
+                                    <MenuItem Header="_Add" Name="MenuAddFolder">
+                                        <MenuItem.Icon>
+                                            <Image Name="IconMenuAddFolder" 
+                                         Source="/Icon/folder-16.png"></Image>
+
+                                        </MenuItem.Icon>
+                                        <MenuItem Header="_Directoties.." Name="Directories1" Click="Directories1_Click">
+                                            <MenuItem.Icon>
+                                                <Image Name="IconDirectories1"
+                                                   Source="/Icon/full-folder-16.png"/>
+                                            </MenuItem.Icon>
+                                        </MenuItem>
+                                        <MenuItem Header="_SubDirectoties.." Name="SubDirectories" Click="SubDirectories_Click">
+                                            <MenuItem.Icon>
+                                                <Image Name="IconSubDirectories"
+                                                   Source="/Icon/full-folder-16.png"/>
+                                            </MenuItem.Icon>
+                                        </MenuItem>
+                                    </MenuItem>
+                                </Menu>
+                                <Separator/>
+                                <Button x:Name="bnt_FirstFolder" Click="bnt_MoveFirstFolder_Click">
+                                    <Image Name="IconFirstFolder" 
+                                       Source="/Icon/first.png"></Image>
+                                </Button>
+                                <Button  x:Name="bnt_UpFolder" Click="bnt_MoveUpFolder_Click">
+                                    <Image Name="IconTopFolder"
+                                        Source="/Icon/top.png"></Image>
+                                </Button>
+                                <Button  x:Name="bnt_DownFolder" Click="bnt_MoveDownFolder_Click">
+                                    <Image Name="IconDownFolder"
+                                        Source="/Icon/down.png"></Image>
+                                </Button>
+                                <Button  x:Name="bnt_LastFolder" Click="bnt_MoveLastFolder_Click">
+                                    <Image Name="IconLastFolder"
+                                        Source="/Icon/last.png"></Image>
+                                </Button>
+                            </ToolBar>
+                        </ToolBarTray>
+                        <ListView x:Name="ListFolderSelected" SelectionMode="Single"
+                                  Height="480" ScrollViewer.VerticalScrollBarVisibility="Visible" Background="LightBlue" FontWeight="Bold">
+                            <!-- <ListView.ItemContainerStyle>
+                                <Style TargetType="{x:Type ListViewItem}">
+                                    <Setter Property="IsSelected" Value="{Binding IsGroovyDir}"/>
+                                </Style>
+                            </ListView.ItemContainerStyle>-->
+                            <ListView.View>
+
+                                <GridView>
+                                    <GridViewColumn>
+                                        <GridViewColumn.Header>
+                                            <CheckBox Checked="CheckBox_Checked_1" Unchecked="CheckBox_Unchecked_1"/>
+                                        </GridViewColumn.Header>
+                                        <GridViewColumn.CellTemplate>
+                                            <DataTemplate>
+                                                <CheckBox Margin="7" Tag="{Binding IsGroovyDir}" IsChecked="{Binding IsGroovyDir}"/>
+                                            </DataTemplate>
+                                        </GridViewColumn.CellTemplate>
+                                    </GridViewColumn >
+                                    <GridViewColumn Header="Foldername" Width="180" DisplayMemberBinding="{Binding Foldername}" ></GridViewColumn>
+                                    <GridViewColumn Header="New Foldername" Width="180" DisplayMemberBinding="{Binding NewFoldername}" ></GridViewColumn>
+                                    <GridViewColumn Header="Path" Width="180"  DisplayMemberBinding="{Binding PathFolder}" ></GridViewColumn>
+                                    <GridViewColumn Header="Error" Width="180" DisplayMemberBinding="{Binding ErrorFolder}" ></GridViewColumn>
+                                </GridView>
+                            </ListView.View>
+                        </ListView>
+                    </StackPanel>
+                </TabItem>
+            </TabControl>
+        </StackPanel>
+    </DockPanel>
+</Window>

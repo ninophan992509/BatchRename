@@ -1,0 +1,20 @@
+﻿Batch Rename
+
+
+winexe
+C#
+.cs
+D:\Project\Batch Rename\Batch Rename\obj\Debug\
+Batch_Rename
+none
+false
+DEBUG;TRACE
+D:\Project\Batch Rename\Batch Rename\App.xaml
+833448804
+
+13-1136022963
+15-1381506019
+ExtensionFrame.xaml;MainWindow.xaml;MoveFrame.xaml;NewCaseFrame.xaml;NewNameFrame.xaml;RemoveFrame.xaml;ReplaceFrame.xaml;TrimFrame.xaml;
+
+True
+
