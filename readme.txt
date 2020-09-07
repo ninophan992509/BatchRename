@@ -1,6 +1,4 @@
 ﻿Batch Rename
-1712610 - Phan Thị Kim Ngân
-1712668 - Lê Huỳnh Phúc
 Link video: https://drive.google.com/file/d/1E20XeTE3zDqCfVLzSFYR2wYCv3iZRCYI/view?usp=sharing
 
 Phần đã hoàn thành và làm thêm (xem video để hiểu thêm):
