@@ -24,14 +24,15 @@ Phần đã hoàn thành và làm thêm (xem video để hiểu thêm):
 				
 6. Cho phép xem trước khi đổi tên, các button cài đặt đầy đủ
 
-Lưu ý: - Khi muốn chọn hay xóa phương thức, cần nhấp vào phần nội dung của phương thức mới có thể xóa hoặc chọn.
-           - Button Refresh dùng để cập nhật lại combobox preset, nếu vừa lưu xong một preset, cần nhấn refresh để combobox cập nhật lại.
-           - Các preset có đuôi mở rộng là ".brn", nếu chọn đuôi khác sẽ không mở.
-           - Khi lưu các preset "nên" lưu trong thư mục Batch Methods, mở ra cũng tương tự
-           - Để tìm một từ để xóa trong chuỗi, ví dụ chuỗi  "myVideoyoutube.mp4", muốn xóa từ youtube trong chuỗi có 2 cách:
-	+ Dùng Remove, nhập vị trí bắt đầu là 8, số kí tự cần xóa là 7
-	+ Dùng Replace, trong ô Old Content nhập youtube, phần New Content để trống.
-          - Để đổi tên mở rộng của một tệp, ta chọn phương thức Extension, nhập vào tên mở rộng muốn đổi vào Convert ví dụ: ".jpg" và nhập tên mở rộng muốn đổi vào To ví dụ:".png"
+Lưu ý: 
+	- Khi muốn chọn hay xóa phương thức, cần nhấp vào phần nội dung của phương thức mới có thể xóa hoặc chọn.
+        - Button Refresh dùng để cập nhật lại combobox preset, nếu vừa lưu xong một preset, cần nhấn refresh để combobox cập nhật lại.
+        - Các preset có đuôi mở rộng là ".brn", nếu chọn đuôi khác sẽ không mở.
+      	- Khi lưu các preset "nên" lưu trong thư mục Batch Methods, mở ra cũng tương tự
+	- Để tìm một từ để xóa trong chuỗi, ví dụ chuỗi  "myVideoyoutube.mp4", muốn xóa từ youtube trong chuỗi có 2 cách:
+		+ Dùng Remove, nhập vị trí bắt đầu là 8, số kí tự cần xóa là 7
+		+ Dùng Replace, trong ô Old Content nhập youtube, phần New Content để trống.
+        - Để đổi tên mở rộng của một tệp, ta chọn phương thức Extension, nhập vào tên mở rộng muốn đổi vào Convert ví dụ: ".jpg" và nhập tên mở rộng muốn đổi vào To ví dụ:".png"
 	   
 
              
